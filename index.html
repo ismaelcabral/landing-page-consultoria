@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultoria Comercial - Ismael Cabral</title>
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'neon-red': {
+              DEFAULT: '#FF3333',
+              400: '#FF6666',
+              500: '#FF3333',
+              600: '#CC0000',
+            },
+            'subtle-purple': {
+              DEFAULT: '#A390E4',
+              500: '#A390E4',
+              900: '#1A1429',
+            },
+            'rich-black': '#050505',
+            'deep-grey': '#121212',
+            neutral: {
+              850: '#1a1a1a',
+              900: '#171717',
+              950: '#0a0a0a',
+            },
+          },
+          fontFamily: {
+            sans: ['Inter', 'Montserrat', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body
+  class="min-h-screen bg-rich-black text-gray-300 font-sans selection:bg-neon-red selection:text-black overflow-x-hidden relative">
+
+  <!-- Background (FloatingPaths) -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <svg class="absolute w-full h-full text-slate-900 opacity-20" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path d="M0,50 Q25,45 50,50 T100,50" stroke="currentColor" stroke-width="0.2" fill="none">
+        <animate attributeName="d"
+          values="M0,50 Q25,45 50,50 T100,50; M0,50 Q25,55 50,50 T100,50; M0,50 Q25,45 50,50 T100,50" dur="10s"
+          repeatCount="indefinite" />
+      </path>
+      <path d="M0,60 Q25,65 50,60 T100,60" stroke="currentColor" stroke-width="0.2" fill="none">
+        <animate attributeName="d"
+          values="M0,60 Q25,65 50,60 T100,60; M0,60 Q25,55 50,60 T100,60; M0,60 Q25,65 50,60 T100,60" dur="15s"
+          repeatCount="indefinite" />
+      </path>
+      <path d="M0,40 Q25,35 50,40 T100,40" stroke="currentColor" stroke-width="0.2" fill="none">
+        <animate attributeName="d"
+          values="M0,40 Q25,35 50,40 T100,40; M0,40 Q25,45 50,40 T100,40; M0,40 Q25,35 50,40 T100,40" dur="12s"
+          repeatCount="indefinite" />
+      </path>
+    </svg>
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0f172a]/20 via-[#0f172a]/80 to-[#0f172a]"></div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="relative z-10">
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden bg-transparent">
+      <!-- Background Effects -->
+      <div
+        class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-subtle-purple-900/10 via-transparent to-transparent -z-10">
+      </div>
+
+      <div class="max-w-5xl mx-auto text-center space-y-8 relative z-10">
+        <div>
+          <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight tracking-tight text-white mb-6">
+            Você é refém da sua própria <span class="text-neon-red">equipe de vendas</span>?
+          </h1>
+        </div>
+
+        <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          Se você não estiver na empresa, a meta é batida? Eu transformo sua visão comercial em um <strong
+            class="text-white">Processo Autônomo</strong>, onde a tecnologia garante a execução e você fica livre do
+          microgerenciamento.
+        </p>
+
+        <div class="flex flex-col items-center justify-center gap-4 pt-8">
+          <!-- Button Replacement -->
+          <a href="https://wa.me/5585999999999"
+            class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-zinc-900 px-8 font-medium text-white transition-all duration-300 hover:bg-zinc-900 hover:shadow-[0_0_40px_-10px_rgba(168,85,247,0.5)] border border-white/10 w-full sm:w-auto">
+            <span
+              class="absolute inset-0 opacity-0 group-hover:opacity-40 transition-opacity duration-500 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur-lg"></span>
+
+            <span class="relative flex items-center gap-2">
+              QUERO UMA OPERAÇÃO AUTÔNOMA
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Authority Section -->
+    <section class="py-20 px-6 bg-rich-black/30 backdrop-blur-sm relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-1/3 h-full bg-subtle-purple/5 blur-3xl -z-10"></div>
+
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="relative group shrink-0">
+          <div
+            class="absolute inset-0 bg-neon-red/20 rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity">
+          </div>
+          <img src="/perfil.png" alt="Ismael Cabral"
+            class="w-full max-w-[320px] h-auto rounded-2xl object-cover border border-white/10 relative z-10 shadow-2xl transition-all duration-500 bg-gradient-to-b from-transparent to-black/50" />
+        </div>
+
+        <div class="flex-1 space-y-6 text-center md:text-left">
+          <div>
+            <span class="text-neon-red font-medium tracking-wide text-sm uppercase mb-2 block">
+              Quem será seu Assessor
+            </span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Ismael Cabral</h2>
+            <p class="text-subtle-purple font-medium text-lg">Especialista em Tecnologia Comercial</p>
+          </div>
+
+          <p class="text-gray-300 leading-relaxed text-lg">
+            Uma empresa que depende da "inspiração" do vendedor ou da presença do dono não é um negócio, é uma aposta.
+          </p>
+          <p class="text-gray-300 leading-relaxed text-lg mt-4">
+            Minha missão é <strong class="text-white">Estruturar sua Operação</strong>. Eu pego o que funciona (sua
+            visão) e transformo em um ecossistema onde Processos e Inteligência Artificial trabalham juntos para
+            garantir previsibilidade de receita.
+          </p>
+
+          <div class="pt-4 border-l-4 border-neon-red pl-6 py-2 bg-white/5 rounded-r-lg">
+            <p class="text-gray-200 italic font-medium text-lg">
+              "Parceiro Oficial <strong class="text-white">Funil de Vendas</strong>."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problems Section -->
+    <section class="py-24 px-6 bg-transparent relative">
+      <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-neutral-900/50 to-transparent -z-10">
+      </div>
+
+      <div class="max-w-2xl mx-auto">
+        <div class="flex flex-col gap-6">
+          <!-- Problem 1 -->
+          <div
+            class="bg-rich-black/40 backdrop-blur-md border border-white/10 rounded-2xl p-8 hover:border-neon-red/30 transition-all duration-300 group hover:-translate-y-1">
+            <div class="flex items-start gap-5">
+              <div class="shrink-0 text-neon-red">
+                <div
+                  class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center group-hover:bg-neon-red/10 transition-colors">
+                  <!-- Clock Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-6 h-6">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Microgerenciamento Diário</h3>
+                <p class="text-gray-400 leading-relaxed">
+                  Você gasta energia cobrando o básico (CRM, follow-up, resposta rápida). Seu papel virou fiscal de
+                  vendedor em vez de estrategista do negócio.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Problem 2 -->
+          <div
+            class="bg-rich-black/40 backdrop-blur-md border border-white/10 rounded-2xl p-8 hover:border-neon-red/30 transition-all duration-300 group hover:-translate-y-1">
+            <div class="flex items-start gap-5">
+              <div class="shrink-0 text-neon-red">
+                <div
+                  class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center group-hover:bg-neon-red/10 transition-colors">
+                  <!-- UserX Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-6 h-6">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <line x1="17" y1="8" x2="22" y2="13"></line>
+                    <line x1="22" y1="8" x2="17" y2="13"></line>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Dependência de Talentos</h3>
+                <p class="text-gray-400 leading-relaxed">
+                  O resultado depende da boa vontade individual. Se o 'vendedor estrela' sair, ele leva o método e o
+                  faturamento com ele.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Problem 3 -->
+          <div
+            class="bg-rich-black/40 backdrop-blur-md border border-white/10 rounded-2xl p-8 hover:border-neon-red/30 transition-all duration-300 group hover:-translate-y-1">
+            <div class="flex items-start gap-5">
+              <div class="shrink-0 text-neon-red">
+                <div
+                  class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center group-hover:bg-neon-red/10 transition-colors">
+                  <!-- MessageSquareX Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-6 h-6">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    <path d="m14.5 7.5-5 5"></path>
+                    <path d="m9.5 7.5 5 5"></path>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Dinheiro pelo Ralo</h3>
+                <p class="text-gray-400 leading-relaxed">
+                  Sem um processo blindado, leads valiosos são esquecidos e o CAC (Custo de Aquisição) dispara. A
+                  desorganização drena sua margem de lucro.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-24 px-6 bg-rich-black/30 backdrop-blur-sm relative">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+          <span class="text-neon-red font-medium tracking-wide text-sm uppercase mb-4 block">
+            A Metodologia "Engenharia de Vendas"
+          </span>
+          <h2 class="text-3xl md:text-5xl font-bold text-white">
+            O Protocolo de Estruturação em 3 Fases
+          </h2>
+        </div>
+
+        <div class="relative">
+          <div class="space-y-12 relative">
+            <!-- Step 1 -->
+            <div
+              class="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-0 relative md:flex-row-reverse">
+              <div class="flex-1 w-full md:w-1/2 pl-0 md:px-12">
+                <div
+                  class="bg-rich-black/40 backdrop-blur-md border border-white/10 p-6 rounded-2xl hover:border-subtle-purple/30 transition-colors md:text-left">
+                  <h3 class="text-xl font-bold text-white mb-2 flex flex-col md:block">
+                    <span class="text-neon-red text-sm md:hidden mb-1">Passo 01</span>
+                    Mapeamento e Playbook
+                  </h3>
+                  <p class="text-gray-400">
+                    Documentamos a cultura comercial. Definimos as regras do jogo, os scripts e os fluxos que tornam a
+                    venda replicável por qualquer pessoa.
+                  </p>
+                </div>
+              </div>
+              <div class="flex-1 w-full md:w-1/2 hidden md:block"></div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-0 relative">
+              <div class="flex-1 w-full md:w-1/2 pl-0 md:px-12">
+                <div
+                  class="bg-rich-black/40 backdrop-blur-md border border-white/10 p-6 rounded-2xl hover:border-subtle-purple/30 transition-colors md:text-right">
+                  <h3 class="text-xl font-bold text-white mb-2 flex flex-col md:block">
+                    <span class="text-neon-red text-sm md:hidden mb-1">Passo 02</span>
+                    Integração Tecnológica (O Diferencial)
+                  </h3>
+                  <p class="text-gray-400">
+                    A tecnologia entra para blindar o processo. A IA atua na qualificação e na cadência, garantindo que
+                    nenhum lead seja desperdiçado por falha humana.
+                  </p>
+                </div>
+              </div>
+              <div class="flex-1 w-full md:w-1/2 hidden md:block"></div>
+            </div>
+
+            <!-- Step 3 -->
+            <div
+              class="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-0 relative md:flex-row-reverse">
+              <div class="flex-1 w-full md:w-1/2 pl-0 md:px-12">
+                <div
+                  class="bg-rich-black/40 backdrop-blur-md border border-white/10 p-6 rounded-2xl hover:border-subtle-purple/30 transition-colors md:text-left">
+                  <h3 class="text-xl font-bold text-white mb-2 flex flex-col md:block">
+                    <span class="text-neon-red text-sm md:hidden mb-1">Passo 03</span>
+                    Validação e Cultura
+                  </h3>
+                  <p class="text-gray-400">
+                    Não entrego e vou embora. Acompanho a operação rodando para garantir que o time absorveu o novo
+                    ritmo e a máquina está performando.
+                  </p>
+                </div>
+              </div>
+              <div class="flex-1 w-full md:w-1/2 hidden md:block"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Differentiation Section -->
+    <section class="py-24 px-6 bg-transparent relative">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
+            POR QUE UMA ASSESSORIA?
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Item 1 -->
+          <div
+            class="bg-rich-black/40 backdrop-blur-md border border-white/10 p-8 rounded-2xl relative overflow-hidden group hover:border-subtle-purple/30 transition-colors">
+            <div class="w-12 h-12 bg-subtle-purple/10 rounded-lg flex items-center justify-center mb-6">
+              <!-- TrendingUp Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-6 h-6 text-subtle-purple">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-4">Visão de Negócio, não de TI</h3>
+            <p class="text-gray-400 text-lg leading-relaxed">
+              Não vendo software. Vendo eficiência operacional. A ferramenta serve ao processo de vendas, e não o
+              contrário.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div
+            class="bg-rich-black/40 backdrop-blur-md border border-white/10 p-8 rounded-2xl relative overflow-hidden group hover:border-neon-red/30 transition-colors">
+            <div class="w-12 h-12 bg-neon-red/10 rounded-lg flex items-center justify-center mb-6">
+              <!-- Target Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-6 h-6 text-neon-red">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-4">O Fim do "Achismo"</h3>
+            <p class="text-gray-400 text-lg leading-relaxed">
+              Transformamos a arte de vender em ciência. Métricas claras, funil auditável e rotina estabelecida.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div
+            class="bg-rich-black/40 backdrop-blur-md border border-white/10 p-8 rounded-2xl relative overflow-hidden group hover:border-gold/30 transition-colors">
+            <div class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center mb-6">
+              <!-- Settings Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-6 h-6 text-white">
+                <path
+                  d="M12.22 2h-.44a2 2 0 0 1-2-1.79l-.16-1.07a8.06 8.06 0 0 0-4.72 2.6l-1 1A8.06 8.06 0 0 0 12 21.06a8.06 8.06 0 0 0 3.76-1.37l.86.49a2 2 0 0 1 1 1.68 2 2 0 0 1-1.68-1l-.49-.86a8.06 8.06 0 0 0-1.37-3.76l1.37-1.37a2 2 0 0 1 2.82 2.82L15 20.37V22h-1.66a2 2 0 0 1-2-1.79l-.16-1.07a8.06 8.06 0 0 0-4.72-2.6l-1 1A8.06 8.06 0 0 0 12 2.94a8.06 8.06 0 0 0 3.76 1.37l.86-.49a2 2 0 0 1 1-1.68 2 2 0 0 1-1.68 1l-.49.86a8.06 8.06 0 0 0-1.37 3.76l1.37 1.37a2 2 0 0 1 2.82-2.82L15 3.63V2z">
+                </path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-4">Implementação "Done-for-you"</h3>
+            <p class="text-gray-400 text-lg leading-relaxed">
+              Eu lidero a estruturação do início ao fim. Você aprova a estratégia, eu garanto a execução técnica e
+              tática.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="py-24 px-6 bg-rich-black/30 backdrop-blur-sm relative">
+      <div
+        class="absolute inset-0 bg-[radial-gradient(circle_at_bottom,_var(--tw-gradient-stops))] from-neon-red/5 via-transparent to-transparent -z-10">
+      </div>
+
+      <div class="max-w-3xl mx-auto">
+        <div
+          class="bg-rich-black/60 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+          <!-- Shine effect -->
+          <div
+            class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-neon-red/5 rounded-full blur-3xl pointer-events-none">
+          </div>
+
+          <div class="text-center mb-10 space-y-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-white leading-tight">
+              Sua empresa pronta para escalar (com ou sem você na sala).
+            </h2>
+            <p class="text-gray-400 text-lg">
+              Vamos fazer uma <strong class="text-white">Sessão de Alinhamento (15 min)</strong>? Quero entender o
+              gargalo atual da sua operação.
+            </p>
+
+            <div
+              class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-gray-400 text-sm italic">
+              <!-- AlertCircle Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-4 h-4 text-neon-red">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <span>Ideal para empresas com faturamento acima de R$ 10 mil/mês.</span>
+            </div>
+          </div>
+
+          <!-- Visual Form (Static) -->
+          <form onsubmit="event.preventDefault(); window.location.href='https://wa.me/5585999999999';"
+            class="space-y-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Nome</label>
+                <input type="text" id="name" name="name" required
+                  class="w-full bg-rich-black/50 border border-white/10 rounded-xl px-4 py-4 text-white placeholder:text-gray-600 focus:outline-none focus:border-neon-red/50 focus:ring-1 focus:ring-neon-red/50 transition-colors"
+                  placeholder="Seu nome">
+              </div>
+              <div>
+                <label for="whatsapp" class="block text-sm font-medium text-gray-300 mb-2">WhatsApp</label>
+                <input type="text" id="whatsapp" name="whatsapp" required
+                  class="w-full bg-rich-black/50 border border-white/10 rounded-xl px-4 py-4 text-white placeholder:text-gray-600 focus:outline-none focus:border-neon-red/50 focus:ring-1 focus:ring-neon-red/50 transition-colors"
+                  placeholder="(DDD) 99999-9999">
+              </div>
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email corporativo</label>
+              <input type="email" id="email" name="email" required
+                class="w-full bg-rich-black/50 border border-white/10 rounded-xl px-4 py-4 text-white placeholder:text-gray-600 focus:outline-none focus:border-neon-red/50 focus:ring-1 focus:ring-neon-red/50 transition-colors"
+                placeholder="empresa@email.com">
+            </div>
+
+            <div>
+              <label for="revenue" class="block text-sm font-medium text-gray-300 mb-2">Faturamento mensal</label>
+              <select id="revenue" name="revenue" required
+                class="w-full bg-rich-black/50 border border-white/10 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-neon-red/50 focus:ring-1 focus:ring-neon-red/50 transition-colors appearance-none">
+                <option value="" disabled selected>Selecione uma faixa</option>
+                <option value="10k-50k">R$ 10.000 - R$ 50.000</option>
+                <option value="50k-100k">R$ 50.000 - R$ 100.000</option>
+                <option value="100k-300k">R$ 100.000 - R$ 300.000</option>
+                <option value="+300k">Acima de R$ 300.000</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="challenge" class="block text-sm font-medium text-gray-300 mb-2">Principal desafio</label>
+              <textarea id="challenge" name="challenge" required rows="3"
+                class="w-full bg-rich-black/50 border border-white/10 rounded-xl px-4 py-4 text-white placeholder:text-gray-600 focus:outline-none focus:border-neon-red/50 focus:ring-1 focus:ring-neon-red/50 transition-colors resize-none"
+                placeholder="Resuma seu maior gargalo hoje..."></textarea>
+            </div>
+
+            <!-- Button Replacement in Form -->
+            <a href="https://wa.me/5585999999999"
+              class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-zinc-900 px-8 font-medium text-white transition-all duration-300 hover:bg-zinc-900 hover:shadow-[0_0_40px_-10px_rgba(168,85,247,0.5)] border border-white/10 w-full justify-center">
+              <span
+                class="absolute inset-0 opacity-0 group-hover:opacity-40 transition-opacity duration-500 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur-lg"></span>
+
+              <span class="relative flex items-center gap-2">
+                APLICAR PARA ASSESSORIA
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </a>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-white/5 bg-rich-black/80 backdrop-blur-md">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="space-y-2 text-center md:text-left">
+          <div class="text-gray-500 text-sm">
+            © 2026 Ismael Cabral. Todos os direitos reservados.
+          </div>
+          <div class="flex items-center gap-2 justify-center md:justify-start">
+            <span class="w-2 h-2 rounded-full bg-neon-red/50 animate-pulse"></span>
+            <span class="text-xs text-gray-600 uppercase tracking-widest font-medium">Parceiro Oficial Funil de
+              Vendas</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-8">
+          <a href="#" class="text-gray-400 hover:text-neon-red transition-colors flex items-center gap-2 text-sm group">
+            <!-- MessageCircle Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="w-5 h-5 group-hover:-translate-y-1 transition-transform">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span class="hidden sm:inline">WhatsApp</span>
+          </a>
+          <a href="mailto:contato@ismaelcabral.com"
+            class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 text-sm group">
+            <span class="hidden sm:inline">Email</span>
+          </a>
+          <a href="#"
+            class="text-gray-400 hover:text-subtle-purple transition-colors flex items-center gap-2 text-sm group">
+            <!-- Linkedin Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="w-5 h-5 group-hover:-translate-y-1 transition-transform">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            <span class="hidden sm:inline">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</body>
+
+</html>
