@@ -52,22 +52,16 @@
 
   <!-- Background (FloatingPaths) -->
   <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-    <svg class="absolute w-full h-full text-slate-900 opacity-20" viewBox="0 0 100 100" preserveAspectRatio="none">
-      <path d="M0,50 Q25,45 50,50 T100,50" stroke="currentColor" stroke-width="0.2" fill="none">
-        <animate attributeName="d"
-          values="M0,50 Q25,45 50,50 T100,50; M0,50 Q25,55 50,50 T100,50; M0,50 Q25,45 50,50 T100,50" dur="10s"
-          repeatCount="indefinite" />
-      </path>
-      <path d="M0,60 Q25,65 50,60 T100,60" stroke="currentColor" stroke-width="0.2" fill="none">
-        <animate attributeName="d"
-          values="M0,60 Q25,65 50,60 T100,60; M0,60 Q25,55 50,60 T100,60; M0,60 Q25,65 50,60 T100,60" dur="15s"
-          repeatCount="indefinite" />
-      </path>
-      <path d="M0,40 Q25,35 50,40 T100,40" stroke="currentColor" stroke-width="0.2" fill="none">
-        <animate attributeName="d"
-          values="M0,40 Q25,35 50,40 T100,40; M0,40 Q25,45 50,40 T100,40; M0,40 Q25,35 50,40 T100,40" dur="12s"
-          repeatCount="indefinite" />
-      </path>
+    <svg class="absolute w-full h-full opacity-30" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0,50 Q25,45 50,50 T100,50" stroke="rgba(255,255,255,0.3)" stroke-width="0.3" fill="none">
+            <animate attributeName="d" values="M0,50 Q25,45 50,50 T100,50; M0,50 Q25,55 50,50 T100,50; M0,50 Q25,45 50,50 T100,50" dur="10s" repeatCount="indefinite" />
+        </path>
+        <path d="M0,60 Q25,65 50,60 T100,60" stroke="rgba(255,255,255,0.3)" stroke-width="0.3" fill="none">
+            <animate attributeName="d" values="M0,60 Q25,65 50,60 T100,60; M0,60 Q25,55 50,60 T100,60; M0,60 Q25,65 50,60 T100,60" dur="15s" repeatCount="indefinite" />
+        </path>
+        <path d="M0,40 Q25,35 50,40 T100,40" stroke="rgba(255,255,255,0.3)" stroke-width="0.3" fill="none">
+            <animate attributeName="d" values="M0,40 Q25,35 50,40 T100,40; M0,40 Q25,45 50,40 T100,40; M0,40 Q25,35 50,40 T100,40" dur="12s" repeatCount="indefinite" />
+        </path>
     </svg>
     <div class="absolute inset-0 bg-gradient-to-b from-[#0f172a]/20 via-[#0f172a]/80 to-[#0f172a]"></div>
   </div>
@@ -125,7 +119,7 @@
           <div
             class="absolute inset-0 bg-neon-red/20 rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity">
           </div>
-          <img src="/perfil.png" alt="Ismael Cabral"
+          <img src="perfil.png" alt="Ismael Cabral"
             class="w-full max-w-[320px] h-auto rounded-2xl object-cover border border-white/10 relative z-10 shadow-2xl transition-all duration-500 bg-gradient-to-b from-transparent to-black/50" />
         </div>
 
